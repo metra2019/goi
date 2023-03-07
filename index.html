@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="Display Webcam Stream" name="title">
+        <title>Operator GUI</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="top">
+            <div id="container">
+                <div id="videoplayer">
+                    <video autoplay id="videoElement"></video>
+                </div>
+            </div>
+
+            <div id="data">
+                <table>                
+                    <tr>
+                        <td>Широта:</td>
+                        <td><input id="lat" readonly></td>
+                    </tr>
+                    <tr>
+                        <td>Долгота: </label></td>
+                        <td><input id="long" readonly></input>
+                    </tr>
+                    <tr>
+                        <td>Заряд:</td>
+                        <td><input id="bat" readonly></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="control">
+            <button id="start">Старт</button>
+            <button id="stop">Стоп</button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="json_updater.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
